@@ -1,38 +1,181 @@
-Session 1: [Individual] [30]
-1. Given temperature t in Celcius, write a python expression to convert into farenheit [7]
-2. Given two points A(x1, y1) and B(x2, y2), calculate the straight line distance between them [8]
-3. Calculate the area of the triangle with threen given points A(x1, y1), B(x2, y2), C(x3, y3) [15]
+Session #1: [45]
+-------------------------------------------------------------------------------------------------------------------
+basket = ["Apple", "Banana", "Cherry", "Mango"]  
+Task: Insert "Grapes" between "Banana" and "Cherry".  
 
-Session 2: [Individual] [45]
+data = [10, 20, [30, 40, 50], 60, 70]  
+Task: Change 40 to 45 inside the nested list.  
 
-1. Write a program to calculate the height of a building given the 
-   distance of the measuring instrument from the building and angle formed 
-   at the observer when the highest point is seen [15]
-2. Given three points in space A, B and C, determine if the points make a isoceles
-   triangle, or right angled triangle or both [15]
-3. Design a simple calculator which has the following functionality:
-   add, sub, mul, div, mod, sqrt, log [15]
- 
-Session 3: [Individual] [20]
+nums = [3, 6, 9, 12, 15, 18, 21]  
+Task: Extract [9, 12, 15] and reverse it.  
 
- Given an IP address string "192-168-1-1" correct it 
- Convert "hello world" to uppercase
- Swap the case of "PyThOn StRiNgS"
- Find the length of "Hello, Python!"
- Count how many times "e" appears in "experience"
- Check if "Python programming" starts with "Py"
- Check if "hello.txt" ends with ".txt"
- Find the index of "world" in "hello world"
- Replace "Python" with "Java" in "I love Python"
- Remove leading and trailing spaces from " Python "
- Split "Learn Python Programming" into words
- Join ['apple', 'banana', 'cherry'] with commas
- Check if "Python3" is alphanumeric
- Convert "5" to a 3-digit string ("005")
- Given name = "Alice" and age = 25, format "Alice is 25 years old."
- Check if 'malayalam' is a palindrome
+numbers = [5, 3, 8, 5, 10, 5, 12, 5]  
+Task: Remove all occurrences of 5 from numbers.  
 
- Session 4:
+list1 = [8, 3, 1, 7]  
+list2 = [4, 9, 2, 6]  
+Task: Merge list1 and list2, then sort the combined list.  
 
- Create a program to accept text from the user and count the number of vowels
- in the text
+colors = ("Red", "Green", "Blue", "Yellow")  
+Task: Convert colors to a list, change "Green" to "Cyan", and convert it back to a tuple.  
+
+names = ["Alice", "Bob", "Charlie", "David", "Eve"]  
+Task: Find the index of "Charlie".  
+
+nums_tuple = (4, 2, 4, 6, 4, 8, 4, 10)  
+Task: Count how many times 4 appears in nums_tuple.  
+
+values = [10, 20, 30, 40, 50]  
+Task: Swap the first and last elements.  
+
+values = []
+Task: Generate a list of squares for numbers from 1 to 10.  
+
+my_tuple = (1, 2, 3, 4, 5)  
+Task: Reverse my_tuple without converting it to a list.  
+
+data = [23, 45, 67, 12, 89, 34]  
+Task: Find the maximum and minimum values in data.  
+
+nums = [10, 20, 30, 40, 50, 60, 70]  
+Task: Extract every second element from nums.  
+
+
+**************************************************************
+nested_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]  
+Task: Convert nested_list into a single flat list.  
+**************************************************************
+
+
+**************************************************************
+list_a = [1, 2, 3, 4, 5, 6]  
+list_b = [4, 5, 6, 7, 8, 9]  
+Task: Find common elements between list_a and list_b.  
+**************************************************************
+
+scores = [78, 55, 92, 30, 88, 62]  
+Task: Sort scores in descending order.  
+
+my_tuple = (1, 2, 3)  
+Task: Repeat my_tuple three times and store the result.  
+
+**************************************************************
+numbers = [1, 2, 2, 3, 4, 4, 5, 6, 6]  
+Task: Remove duplicates while keeping the order.  
+**************************************************************
+
+words = ["Hello", "World", "Python", "Programming"]  
+Task: Insert "Amazing" at index 2.  
+
+
+**************************************************************
+pairs = [("a", 1), ("b", 2), ("c", 3)]  
+Task: Convert pairs into a dictionary.  
+**************************************************************
+
+
+Session #2 [30 - 40]
+-------------------------------------------------------------------------------------------------------------------
+
+
+nums = [1, 2, 3, 4, 5]  
+Task: Use a for loop to calculate the sum of all elements in nums.  
+
+count = 5  
+Task: Use a while loop to print numbers from count down to 1.  
+
+fruits = ["Apple", "Banana", "Cherry", "Mango"]  
+Task: Use a for loop to print each fruit in uppercase.  
+
+num = 1  
+Task: Use a while loop to print squares of numbers from 1 to 10.  
+
+values = [2, 4, 6, 8, 10]  
+Task: Use a for loop to create a new list containing cubes of values.  
+
+sentence = "Python is fun"  
+Task: Use a for loop to count how many times 'o' appears in sentence.  
+
+num = 10  
+Task: Use a while loop to print even numbers from 10 to 2 in reverse order.  
+
+matrix = [[1, 2], [3, 4], [5, 6]]  
+Task: Use nested for loops to print all elements in matrix.  
+
+num = 7  
+Task: Use a while loop to find the factorial of num.  
+
+numbers = [3, 9, 12, 18, 21, 25]  
+Task: Use a for loop to print only the numbers divisible by 3.  
+
+
+
+Session #3 [40]
+-------------------------------------------------------------------------------------------------------------------
+
+1. Count Word Frequency in a Sentence  
+Task: Given a sentence, count the occurrences of each word using a dictionary.  
+Example:  
+sentence = "apple banana apple orange banana apple"  
+Output: {'apple': 3, 'banana': 2, 'orange': 1}  
+
+2. Find Unique Elements in Two Lists Using Sets  
+Task: Given two lists, find the elements that are unique to each list using sets.  
+Example:  
+list1 = {1, 2, 3, 4}  
+list2 = {3, 4, 5, 6}  
+Output: Unique in list1: {1, 2}, Unique in list2: {5, 6}  
+
+3. Merge Two Dictionaries  
+Task: Merge two dictionaries and sum the values of common keys.  
+Example:  
+dict1 = {'a': 10, 'b': 20}  
+dict2 = {'b': 30, 'c': 40}  
+Output: {'a': 10, 'b': 50, 'c': 40}  
+
+4. Find the Intersection of Two Sets  
+Task: Given two sets, find the common elements.  
+Example:  
+set1 = {1, 2, 3, 4}  
+set2 = {3, 4, 5, 6}  
+Output: {3, 4}  
+
+5. Find the Most Frequent Element in a List  
+Task: Given a list, find the element that appears the most times.  
+Example:  
+numbers = [1, 3, 2, 3, 4, 3, 5, 2, 1, 3]  
+Output: Most frequent: 3 (appears 4 times)  
+
+6. Remove Duplicates from a List Using Sets  
+Task: Remove duplicates from a list while maintaining order.  
+Example:  
+lst = [1, 2, 2, 3, 4, 4, 5, 6, 6, 6]  
+Output: [1, 2, 3, 4, 5, 6]  
+
+7. Find Students Who Enrolled in Both Courses  
+Task: Given two sets of students, find those who are enrolled in both courses.  
+Example:  
+course_A = {"Alice", "Bob", "Charlie"}  
+course_B = {"Bob", "David", "Charlie"}  
+Output: {"Bob", "Charlie"}  
+
+8. Find the Union of Multiple Sets  
+Task: Find the union of three sets.  
+Example:  
+set1 = {1, 2, 3}  
+set2 = {3, 4, 5}  
+set3 = {5, 6, 7}  
+Output: {1, 2, 3, 4, 5, 6, 7}  
+
+9. Reverse a Dictionary (Keys Become Values, Values Become Keys)  
+Task: Swap keys and values in a dictionary.  
+Example:  
+original_dict = {'a': 1, 'b': 2, 'c': 3}  
+Output: {1: 'a', 2: 'b', 3: 'c'}  
+
+10. Check If Two Words Are Anagrams Using Dictionaries  
+Task: Given two words, check if they are anagrams (i.e., contain the same letters with the same frequency).  
+Example:  
+word1 = "listen"  
+word2 = "silent"  
+Output: True (They are anagrams)  

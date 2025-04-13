@@ -1,38 +1,64 @@
-Session 1: [Individual] [30]
-1. Given temperature t in Celcius, write a python expression to convert into farenheit [7]
-2. Given two points A(x1, y1) and B(x2, y2), calculate the straight line distance between them [8]
-3. Calculate the area of the triangle with threen given points A(x1, y1), B(x2, y2), C(x3, y3) [15]
+Session 1: [40]
+---------------------------------------------------------------------------------------------------
 
-Session 2: [Individual] [45]
+1. Write a function to return the time required to double the invested amount and given rate of 
+   interest
+2. Write a function to find the second largest number in the list
+   Example: Input <- [34, 56, 67, 43]
+            Outupt -> 56
+3. Write a function to print charecter pyramid
+   Example: genPyramic(3, '*')
+                 *
+                ***
+               *****
 
-1. Write a program to calculate the height of a building given the 
-   distance of the measuring instrument from the building and angle formed 
-   at the observer when the highest point is seen [15]
-2. Given three points in space A, B and C, determine if the points make a isoceles
-   triangle, or right angled triangle or both [15]
-3. Design a simple calculator which has the following functionality:
-   add, sub, mul, div, mod, sqrt, log [15]
- 
-Session 3: [Individual] [20]
 
- Given an IP address string "192-168-1-1" correct it 
- Convert "hello world" to uppercase
- Swap the case of "PyThOn StRiNgS"
- Find the length of "Hello, Python!"
- Count how many times "e" appears in "experience"
- Check if "Python programming" starts with "Py"
- Check if "hello.txt" ends with ".txt"
- Find the index of "world" in "hello world"
- Replace "Python" with "Java" in "I love Python"
- Remove leading and trailing spaces from " Python "
- Split "Learn Python Programming" into words
- Join ['apple', 'banana', 'cherry'] with commas
- Check if "Python3" is alphanumeric
- Convert "5" to a 3-digit string ("005")
- Given name = "Alice" and age = 25, format "Alice is 25 years old."
- Check if 'malayalam' is a palindrome
+Session 2: [40]
+---------------------------------------------------------------------------------------------------
 
- Session 4:
+1. Write a functions that returns the jumbled version of the words with spaces and capital letters
+   Example: Input <- jumble("apples")
+            Output -> P P L A E S 
+2. Write a function to determine if a number is a fibonacci number
+   Example: Input <- 8
+            OUtput -> 8 is in the fibonacci range
+3. Write a python function to merge two dictionaries
+   Example: d1 = { 'a': 20, 'b': 30 }
+            d2 = { 'b': 40, 'c': 50 }
+            Output -> { 'a' : 20, 'b':70, 'c' : 50 }
+    Merge rules: Numbers -> add
+                 Strings -> concatenate
+                 List, set -> Merge
+                 Tuple -> List of tuples
+                 Dictionary -> Merge
 
- Create a program to accept text from the user and count the number of vowels
- in the text
+4. Write a function that takes a mix of numbers and categorizes them into positives, negatives, and zeros. 
+   It should return the count of each category and their respective sums.
+5. Create a function authenticator(username, password) that returns another function, 
+   which can be called to access a secure message only if the username and password match.
+
+
+Session 3: [40]
+---------------------------------------------------------------------------------------------------
+
+1. Write a recursive function to compute the nth Fibonacci number.
+2. Write a recursive function to compute the factorial of a number. 
+3. Generate all the subsets of a given set - explore and explain
+    Input: generate_subsets([1, 2, 3])
+    Output: []
+            [3]
+            [2]
+            [2, 3]
+            [1]
+            [1, 3]
+            [1, 2]
+            [1, 2, 3]
+4. Write a function that takes any number of lists and returns a list of elements that are common to all.
+
+    # Example usage:
+    list1 = [1, 2, 3, 4, 5]
+    list2 = [2, 3, 5, 7, 9]
+    list3 = [1, 2, 5, 8, 10]
+
+    print(find_common(list1, list2, list3))
+

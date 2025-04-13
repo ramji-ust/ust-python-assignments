@@ -49,3 +49,75 @@ perimeter(): Returns perimeter.
 is_square(): Returns True if it’s a square, otherwise False.
 
 ✅ Enhance: Use logic to prevent setting negative values for length and width.
+
+
+Session 2 [60] NOTE: Extend the previously created classes
+---------------------------------------------------------------------------------------------------
+
+1️⃣ Exercise: Implement a Car Class and an ElectricCar Subclass
+------------------------------------------------------------------
+
+Objective:
+Create a Car class with attributes and methods to manage car details.
+Extend it to an ElectricCar subclass with additional attributes and methods.
+
+Tasks:
+Implement a class Car with attributes:
+brand, model, year, mileage
+
+Add methods:
+drive(distance): Increases mileage
+display_info(): Displays car details
+
+Create a subclass ElectricCar with additional attributes:
+battery_capacity, charge_level (default 100)
+
+Add a method:
+charge(amount): Increases charge level (max 100).
+
+Override display_info() to include battery details.
+Create objects for both classes and demonstrate method usage.
+
+2️⃣ Exercise: Implement a BankAccount Class and a SavingsAccount Subclass
+------------------------------------------------------------------
+
+Objective:
+Design a BankAccount class and extend it to a SavingsAccount subclass.
+
+Tasks:
+Create a class BankAccount with attributes:
+account_number, balance
+
+Add methods:
+deposit(amount), withdraw(amount), get_balance()
+
+Implement a subclass SavingsAccount with an additional attribute:
+interest_rate (default 2.5%)
+
+Add a method:
+add_interest(): Computes and adds interest to balance.
+
+Create objects and test deposits, withdrawals, and interest calculations.
+
+3️⃣ Exercise: Implement a Rectangle Class and a Cuboid Subclass
+------------------------------------------------------------------
+
+Objective:
+Implement a Rectangle class and extend it into a Cuboid subclass.
+
+Tasks:
+Create a Rectangle class with attributes:
+length, width
+
+Add methods:
+area(), perimeter(), is_square()
+
+Implement a Cuboid subclass with an additional attribute:
+height
+
+Add methods:
+volume(): Computes volume.
+surface_area(): Computes total surface area.
+
+Create objects and test area, volume, and surface area calculations.
+

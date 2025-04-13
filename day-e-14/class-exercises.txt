@@ -1,0 +1,102 @@
+Session 1 [45]
+---------------------------------------------------------------------------------------------------------
+
+Problem Statement #1:
+--------------------------------------------------------
+
+Write a decorator called @log_function that prints the name of the 
+function being called and its arguments before executing it.
+
+@log_function
+def greet(name):
+    print(f"Hello, {name}!")
+
+greet("Alice") 
+
+# Output: 
+# Calling function: greet 
+# Arguments: 'Alice'
+# Hello, Alice. How are you today?
+
+Problem Statement #2: 
+--------------------------------------------------------
+
+Write a decorator @double_result that doubles the result returned by any function.
+
+Example:
+
+@double_result
+def add(x, y):
+    return x + y
+
+print(add(3, 4))  # Output: 14
+
+Problem Statement #3:
+--------------------------------------------------------
+
+Write a decorator @timer that prints how long a function takes to execute.
+
+import time
+
+@timer
+def slow_function():
+    time.sleep(1)
+    print("Done!")
+
+slow_function() # 1 seconds
+
+
+Problem Statement #4:
+--------------------------------------------------------
+
+Write a decorator @requires_admin that allows access to a function only 
+if the user is an admin.
+
+Example:
+
+@requires_admin
+def delete_data(user_role):
+    print("Data deleted.")
+
+delete_data("admin")      # Allowed
+delete_data("guest")      # Denied
+
+Session 2 [40]
+---------------------------------------------------------------------------------------------------------
+
+Problem Statement #1:
+--------------------------------------------------------
+
+Create a Python class called Circle that represents a circle. T
+he class should allow the following:
+
+Use @property to return the circumference of the circle using the formula 2 * π * radius.
+
+Use @classmethod to create a Circle instance from a diameter.
+
+Use @staticmethod to check if a given value is a valid radius (i.e., a positive number).
+
+Problem Statement #2
+--------------------------------------------------------
+
+Create a class called BankAccount to represent a user’s bank account. 
+The class should allow the following:
+
+Use @property to return the current balance with a message like "Your balance is ₹5000".
+
+Use @classmethod to create a BankAccount from a dictionary containing account details like:
+{"name": "Alice", "balance": 10000}
+
+class BankAccount:
+
+    def __init__(self, n, a):
+        self.name = name
+        self.balance = a
+
+    @classmethod
+    def from_dict(cls, **kargs):
+        return BankAccount(dict(kargs).name, dict(kargs).balance)
+
+Use @staticmethod to check if a given withdrawal amount is valid, i.e., 
+it must be a positive number and less than or equal to the current balance.
+

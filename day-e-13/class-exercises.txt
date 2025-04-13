@@ -1,0 +1,9 @@
+Session 1 [30]
+--------------------------------------------------------------------------
+
+1. Refactor the 24-sc-student-report-generator.py to work with student.json
+    Read student.json
+    Calculate averages and ranks
+    Write student-report.json
+
+    

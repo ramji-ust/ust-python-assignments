@@ -1,0 +1,97 @@
+Session 1 [30]
+-------------------------------------------------------------------------------------------
+
+Problem Statement
+--------------------------------------
+
+You are designing a system to rank products based on their ratings (on a scale of 0 to 5). 
+Two products are considered equal if their ratings are equal. A product with a lower rating 
+is considered less than one with a higher rating.
+
+Requirements:
+
+
+Implement a class Product with the following:
+
+    Attributes: name (str), rating (float)
+    Define appropriate comparison methods to allow sorting and comparison based on rating.
+    such as __le__, __gt__
+    Use @total_ordering to minimize method definitions.
+
+You are to:
+
+        Implement the class with proper ordering using @total_ordering.
+        Create a list of products and sort them.
+        Demonstrate comparisons (==, <, >=, etc.) between different products.
+
+
+class Product:
+    pass
+
+# === SAMPLE TEST CASE ===
+if __name__ == "__main__":
+    p1 = Product("Laptop", 4.5)
+    p2 = Product("Tablet", 4.7)
+    p3 = Product("Phone", 4.5)
+    p4 = Product("Monitor", 4.2)
+
+    print("Sorted Products:", sorted([p1, p2, p3, p4]))
+    print("p1 == p3:", p1 == p3)
+    print("p1 < p2:", p1 < p2)
+    print("p2 >= p4:", p2 >= p4)
+
+# Output
+
+Sorted Products: [Monitor(4.2), Laptop(4.5), Phone(4.5), Tablet(4.7)]
+p1 == p3: True
+p1 < p2: True
+p2 >= p4: True
+
+
+
+Session 2: [60]
+-------------------------------------------------------------------------------------------
+
+Problem Statement: 1
+--------------------------------------
+
+You are tasked with developing a simple student record management system using SQLite3 in Python. The system should perform the following operations:
+
+Requirements:
+
+Create a SQLite database named school.db with a table students having fields:
+
+    id (INTEGER, Primary Key, Auto-increment)
+    name (TEXT)
+    age (INTEGER)
+    grade (TEXT)
+
+- Insert at least three student records into the table using parameterized queries.
+- Fetch and print all student records.
+- Update the grade of a specific student based on their name.
+- Delete a student record based on the id.
+- Display the remaining students and the total number of students.
+- Finalize and close the connection
+
+Deliverables:
+
+- Python code with all the required database operations.
+- Clear output showing the operations performed.
+- Use of best practices: parameterized queries, commit(), and close().
+
+Problem Statement: 2
+--------------------------------------
+
+Tasks:
+
+Create a Student class with the following attributes:
+
+- name (string)
+- roll_number (integer)
+- marks (dictionary of subject-wise marks, e.g., {"Math": 85, "Science": 90})
+
+Create a list of at least two Student objects with sample data.
+Use the pickle module to serialize and save this list into a file named students.pkl.
+Write code to load the student data from students.pkl and display each student’s details.
+
+Challenge: Allow updating a student's marks and re-saving the modified list.

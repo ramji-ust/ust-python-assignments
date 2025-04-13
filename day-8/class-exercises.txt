@@ -1,38 +1,95 @@
-Session 1: [Individual] [30]
-1. Given temperature t in Celcius, write a python expression to convert into farenheit [7]
-2. Given two points A(x1, y1) and B(x2, y2), calculate the straight line distance between them [8]
-3. Calculate the area of the triangle with threen given points A(x1, y1), B(x2, y2), C(x3, y3) [15]
+Session 1: [90 - 120]
+-----------------------------------------------------------------------------------------------------
 
-Session 2: [Individual] [45]
+Regular Expression Exercises in Python
 
-1. Write a program to calculate the height of a building given the 
-   distance of the measuring instrument from the building and angle formed 
-   at the observer when the highest point is seen [15]
-2. Given three points in space A, B and C, determine if the points make a isoceles
-   triangle, or right angled triangle or both [15]
-3. Design a simple calculator which has the following functionality:
-   add, sub, mul, div, mod, sqrt, log [15]
- 
-Session 3: [Individual] [20]
+Extract Floating Point Numbers
+Text: "This statement contains +1.234 floating -67.87 point 1.234 number"
+Task: Write a regex to extract the floating-point number from the text including sign
 
- Given an IP address string "192-168-1-1" correct it 
- Convert "hello world" to uppercase
- Swap the case of "PyThOn StRiNgS"
- Find the length of "Hello, Python!"
- Count how many times "e" appears in "experience"
- Check if "Python programming" starts with "Py"
- Check if "hello.txt" ends with ".txt"
- Find the index of "world" in "hello world"
- Replace "Python" with "Java" in "I love Python"
- Remove leading and trailing spaces from " Python "
- Split "Learn Python Programming" into words
- Join ['apple', 'banana', 'cherry'] with commas
- Check if "Python3" is alphanumeric
- Convert "5" to a 3-digit string ("005")
- Given name = "Alice" and age = 25, format "Alice is 25 years old."
- Check if 'malayalam' is a palindrome
+Find Email Addresses
+Text: "Contact us at support@example.com for more details"
+Task: Write a regex to extract the email address from the text.
 
- Session 4:
+Extract Dates
+Text: "Today's date is 2025-03-27"
+Task: Write a regex to extract the date in YYYY-MM-DD format.
 
- Create a program to accept text from the user and count the number of vowels
- in the text
+Find Words with Double Letters
+Text: "I saw a little kitten running across the street"
+Task: Write a regex to extract words containing consecutive duplicate letters (e.g., little, kitten).
+Answer: r"\w*(\w)\1\w*"
+
+Extract Phone Numbers
+Text: "My phone numbers are (123) 456-7890 and 987-654-3210"
+Task: Write a regex to extract both phone numbers.
+
+
+
+
+------------------------------------
+
+Find Hashtags in a Tweet
+Text: "Loving the #Python and #AI vibes today!"
+Task: Write a regex to extract all hashtags from the text.
+
+Extract Digits from a String
+Text: "Order number: 98765, Confirmation code: 54321"
+Task: Write a regex to extract all numerical values.
+
+Find Words Starting with a Capital Letter
+Text: "Alice and Bob went to New York for a Conference"
+Task: Write a regex to extract words that start with a capital letter.
+
+Extract Domain from URLs
+Text: "Visit https://www.example.com or http://test.org for info"
+Task: Write a regex to extract domain names from the URLs.
+
+Find Repeated Words
+Text: "This is is a test test to find repeated repeated words"
+Task: Write a regex to find repeated words appearing consecutively.
+
+----------------------------------------
+
+Extract Currency Values
+Text: "The product costs $59.99 and the discount is €10.50"
+Task: Write a regex to extract all currency values.
+
+Find HTML Tags
+Text: "<div>Welcome</div> <p>This is a paragraph.</p>"
+Task: Write a regex to extract all HTML tags.
+
+Validate IPv4 Addresses
+Text: "Valid IP: 192.168.1.1, Invalid IP: 999.999.999.999"
+Task: Write a regex to validate IPv4 addresses.
+
+Extract Words Ending with ‘ing’
+Text: "Running, swimming, and playing are fun activities"
+Task: Write a regex to extract words ending with ‘ing’.
+
+Find Sentences Ending with a Question Mark
+Text: "Do you know the answer? Let's find out. Are you sure?"
+Task: Write a regex to extract all sentences ending with ?.
+
+----------------------------------------------
+
+Extract Hex Color Codes
+Text: "Background color is #FF5733 and text color is #00FF00"
+Task: Write a regex to extract hex color codes.
+
+Extract Usernames from Twitter Handles
+Text: "Follow us @ChatGPT and @OpenAI"
+Task: Write a regex to extract usernames after @.
+
+Validate Strong Passwords
+Text: "My password is Str0ngP@ss!"
+Task: Write a regex to check if the password has at least 8 characters, including uppercase, lowercase, numbers, and special characters.
+
+Extract File Names from a Path
+Text: "/home/user/documents/report.pdf and C:\\Users\\Admin\\file.txt"
+Task: Write a regex to extract file names from paths.
+
+Find Three Consecutive Vowels
+Text: "Beautiful ocean scenery is amazing"
+Task: Write a regex to find words containing three consecutive vowels.
+

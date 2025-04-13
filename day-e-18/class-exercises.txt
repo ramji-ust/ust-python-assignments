@@ -1,0 +1,4 @@
+Session 1
+----------------------------------------------------------------------------------------
+
+1. Try debugging the Word Jumble Game code using pdb.set_trace() or breakpoint()

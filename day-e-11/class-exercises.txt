@@ -21,3 +21,65 @@ Session 1 [45]
 
     Number of attempts 4/10
     Excellent playing!
+
+Session 2 [45]
+----------------------------------------------------------------------------------------------
+
+Exercise: Implement a Vector2D Class with Overloaded Operators
+----------------------------------------------------------------
+Objective:
+Implement a 2D vector class and overload operators for addition, subtraction, and comparison.
+
+Tasks:
+Create a class Vector2D with attributes:
+
+    x (horizontal component)
+
+    y (vertical component)
+
+Overload the following operators:
+
+    + (addition): Add corresponding x and y values of two vectors.
+
+    - (subtraction): Subtract corresponding x and y values.
+
+    == (equality): Check if two vectors are identical. Go into operator module and find out what is the
+                   function that needs to be overloaded to achieve this functionality
+
+Implement a __str__() method to display vectors as "(x, y)".
+
+Test your class with examples like:
+v1 = Vector2D(3, 4)
+v2 = Vector2D(1, 2)
+v3 = v1 + v2   # Should return Vector2D(4, 6)
+v4 = v1 - v2   # Should return Vector2D(2, 2)
+print(v3 == Vector2D(4, 6))  # Should return True
+
+
+Exercise: Implement a Time Class with Overloaded Operators
+----------------------------------------------------------------
+
+
+Objective:
+Create a Time class that allows addition of two time durations and comparisons.
+
+Tasks:
+Define a class Time with attributes:
+
+hours, minutes, seconds.
+
+Overload the following operators:
+
++ (addition): Add two time objects correctly handling overflow (e.g., 90 seconds = 1 min 30 sec).
+
+> (greater than): Compare two time objects based on total seconds. Go into operator module and find out what is the
+                   function that needs to be overloaded to achieve this functionality
+
+Implement a __str__() method to display time in "hh:mm:ss" format.
+
+Test your class with examples like:
+
+t1 = Time(1, 45, 50)
+t2 = Time(0, 30, 20)
+t3 = t1 + t2  # Should return Time(2, 16, 10)
+print(t1 > t2)  # Should return True

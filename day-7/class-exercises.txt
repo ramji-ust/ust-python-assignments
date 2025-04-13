@@ -1,38 +1,45 @@
-Session 1: [Individual] [30]
-1. Given temperature t in Celcius, write a python expression to convert into farenheit [7]
-2. Given two points A(x1, y1) and B(x2, y2), calculate the straight line distance between them [8]
-3. Calculate the area of the triangle with threen given points A(x1, y1), B(x2, y2), C(x3, y3) [15]
+Review: Guess my number game
 
-Session 2: [Individual] [45]
+Session 1: [40]
+---------------------------------------------------------------------------------------------------------
+Demo. Design a Word Jumble Game and implement in python
+   The game should consist of atleast 10 words to begin with
+    Jumbled Word: "otpcomure"
+    Your Guess: "computer"
+    ✅ Correct! 
 
-1. Write a program to calculate the height of a building given the 
-   distance of the measuring instrument from the building and angle formed 
-   at the observer when the highest point is seen [15]
-2. Given three points in space A, B and C, determine if the points make a isoceles
-   triangle, or right angled triangle or both [15]
-3. Design a simple calculator which has the following functionality:
-   add, sub, mul, div, mod, sqrt, log [15]
- 
-Session 3: [Individual] [20]
+    Note: Use Unicode charecter to print the tick marks
+    Example: print("\U00002705 Correct!")
+    Sample words should come from a file
 
- Given an IP address string "192-168-1-1" correct it 
- Convert "hello world" to uppercase
- Swap the case of "PyThOn StRiNgS"
- Find the length of "Hello, Python!"
- Count how many times "e" appears in "experience"
- Check if "Python programming" starts with "Py"
- Check if "hello.txt" ends with ".txt"
- Find the index of "world" in "hello world"
- Replace "Python" with "Java" in "I love Python"
- Remove leading and trailing spaces from " Python "
- Split "Learn Python Programming" into words
- Join ['apple', 'banana', 'cherry'] with commas
- Check if "Python3" is alphanumeric
- Convert "5" to a 3-digit string ("005")
- Given name = "Alice" and age = 25, format "Alice is 25 years old."
- Check if 'malayalam' is a palindrome
+1. Based on the above code   
 
- Session 4:
+   Give players two attempts
+   If the player guesses in the first attempt give 2 points, in the second attempt 1 points, otherwise 0
+   Allow players to get hints/clues if they fail to guess in the first attempt
+   Give the result based on total points, total first attempts, total second attempts
+   Use appropriate unicode charecters
 
- Create a program to accept text from the user and count the number of vowels
- in the text
+   Example: 'alepp'
+             Can you guess? ape 
+             CLUE: 'This is a fruit'
+             Take a second guess? apple
+             ✅ Correct! 
+
+             ...
+
+             Total          = 18
+             First          = 5
+             Second         = 8
+             Overall        = B+
+
+   Challenge: Keep the hints in the file. How to read the the words and hints from a file and integrate it
+            Come up with a logic to display the result
+            
+Session 2: [30]
+---------------------------------------------------------------------------------------------------------
+
+1. Complete Word jumble game
+2. Create nfactorial(n) which raises an exception if the input value is 0 or less, test it
+3. Upgrade the getSpan(s, ss) function to raise an exception if ss = '' or s = '', test it
+

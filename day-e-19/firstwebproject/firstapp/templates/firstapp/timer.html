@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Timer</title>
+    <style>
+        h1 {
+            font-size: 48px;
+            text-align: center;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="timer">00:00:00</h1>
+
+    <script>
+        let seconds = 0;
+        let minutes = 0;
+        let hours = 0;
+
+        function updateTimer() {
+            seconds++;
+            if (seconds === 60) {
+                seconds = 0;
+                minutes++;
+                if (minutes === 60) {
+                    minutes = 0;
+                    hours++;
+                }
+            }
+
+            let display = 
+                (hours < 10 ? "0" + hours : hours) + ":" +
+                (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                (seconds < 10 ? "0" + seconds : seconds);
+
+            document.getElementById("timer").innerText = display;
+        }
+
+        setInterval(updateTimer, 1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student List</title>
+</head>
+<body>
+    <h3>Logged in as {{ request.user }} | <a href="{% url 'logout' %}"> Logout</a></h3>
+    <h1>Student List</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Class</th>
+            <th>Marks</th>
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.class_name }}</td>
+            <td>{{ student.marks }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <h3><a href="{% url 'student_form' %}">Add Student</a></h3>
+</body>
+</html>

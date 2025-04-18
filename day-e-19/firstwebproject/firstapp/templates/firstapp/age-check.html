@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGE CHECK</title>
+</head>
+<body>
+    <h1>Hello , {{name}} , {{age}}</h1>
+    {% if age|add:'2' >= 18 %}
+        <h1 style="color: green;">You are an adult</h1>
+    {% else %}
+        <h1 style="color: red;">You are a minor</h1>
+    {% endif %}
+
+</body>
+</html>

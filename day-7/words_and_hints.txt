@@ -1,0 +1,10 @@
+computer,An electronic device
+apple,A fruit
+python,A programming language
+guitar,A musical instrument
+river,A natural flowing water
+planet,A celestial body
+mountain,A large natural elevation
+keyboard,A computer input device
+bicycle,A two-wheeled vehicle
+book,A source of knowledge
